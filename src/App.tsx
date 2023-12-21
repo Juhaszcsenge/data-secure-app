@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Cloud from './Components/cloud/Cloud';
+import Data from './Components/data/Data';
+import Footer from './Components/footer/Footer';
+import Hero from './Components/hero/Hero';
+import Navbar from './Components/navbar/Navbar';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Routes>
+      <Route path='/' element={<App />} />
+      <Route path='/recovery' element={<RecoveryPages />} />
+      <Route path='/cloud' element={<CloudPages />} />
+      <Route path='/contact' element={<ContactPages />} />
+    </Routes> */}
+       <Navbar />
+      <Hero />
+      <Data />
+      <Cloud />
+      <Footer />
+    </>
   );
 }
 
